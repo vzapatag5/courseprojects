@@ -8,6 +8,9 @@ export default class Routes {
     router.get('/', HomeController.index);
     router.get('/about', HomeController.about);
     router.get('/contact', HomeController.contact);
+    router.get('/books', HomeController.showBooks); //mejora de organizacion
+    router.get('/main-point', HomeController.showBooks);  //  como lo pide el tutorial
+    router.get('/books/:id', HomeController.show);
     return router;
   }
 }
