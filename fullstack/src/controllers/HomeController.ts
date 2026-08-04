@@ -3,8 +3,8 @@ import { books } from '../data/Books.js';
 import { Book } from '../models/Book.js';
 
 interface ViewData {
-  [key: string]: any;
-}
+  [key: string]: any; // no se puede porque no se puede preveer lo que necesita cada uno de los viewdata
+}                     // 
 
 export class HomeController {
   static index(req: Request, res: Response): void {
