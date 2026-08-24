@@ -1,5 +1,5 @@
 import { BookService } from './BookService.js';
-
+// ponerle un nombre al archivo más guiado a su funcionalidad. ej: categoryservice.ts
 export default class OtherService {
   public static getUniqueBookCategories(): string[] {
     const books = BookService.getBooks();

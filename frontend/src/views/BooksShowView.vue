@@ -16,10 +16,10 @@ function formatToCOP(price: number): string {
   const formatter = new Intl.NumberFormat('es-CO', {
     style: 'currency',
     currency: 'COP',
-    minimumFractionDigits: 0,
+    minimumFractionDigits: 0, // usar currencyDisplay: 'code' para poner el COP en currency.ts
     maximumFractionDigits: 0,
   });
-
+  // regex para quitar signo de $, se formatea todo a mano,   es mejor usar un nuevo archivo src/utils/currency.ts y exportar la funcion para usarla en todos lados 
   return formatter.format(price).replace(/^\s*\$\s?/, '');
 }
 

@@ -24,7 +24,7 @@ function formatToCOP(price: number): string {
   return formatter.format(price).replace(/^\s*\$\s?/, ''); 
 
 } 
-// watchers
+// watchers - Usar mejor computed que un watch
 watch(selectedCategory, (newCategory) => {
   if (newCategory) {
     filteredBooks.value = books.filter((book) => book.category === newCategory);
