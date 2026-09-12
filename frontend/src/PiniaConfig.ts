@@ -19,7 +19,6 @@ export default class PiniaConfig {
         review: {
           reviews: reviewSeeder,
         },
-
       };
 
       // save the initial state to localStorage

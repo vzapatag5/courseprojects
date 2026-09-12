@@ -15,5 +15,4 @@ export class BookService {
     const id = useBookStore().books.length + 1;
     useBookStore().books.push({ id, ...book });
   }
-
 }
